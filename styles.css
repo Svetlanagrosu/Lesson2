@@ -1,0 +1,40 @@
+:root {
+    --bg-color-primary: gray;
+}
+.spinner {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.sector {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 30px solid transparent;
+    overflow: hidden;
+    border-radius: 50%;
+    animation: rotate 4s linear;
+
+}
+.sector1 {
+    border-bottom: 30px solid red;
+}
+.sector2 {
+    border-right: 30px solid yellow;
+}
+.sector3 {
+    border-left: 30px solid blue;
+
+}
+.sector4 {
+    border-top: 30px solid green;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
