@@ -1,12 +1,24 @@
-:root {
-    --title-primary: 64px;
-    --title-weight: 700;
+body {
+    margin: 0;
+}
+.bg-linear {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: linear-gradient(90deg, red, yellow, blue);
+    background-size:300%;
+    background-position: left;
+    animation: bg 4s alternate infinite;
 
 }
-.titleClass {
-    font-size: var(--title-font);
-    font-weight: var(--title-weight);
+@keyframes bg {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+} 
 
-}
 
 
